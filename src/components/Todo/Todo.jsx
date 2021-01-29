@@ -2,8 +2,7 @@ import React from "react";
 
 import { TodoItem } from "./style";
 
-const removeItem = (e) => {
-  
+const removeItem = (e, i) => {
 }
 
 function Todo({ text, i }) {
@@ -11,7 +10,7 @@ function Todo({ text, i }) {
     <>
       <TodoItem>
         <div className="text">{text}{i}</div>
-        <button>Remove</button>
+        <button onClick={(e) => removeItem(e, i)}>Remove</button>
       </TodoItem>
     </>
   );
