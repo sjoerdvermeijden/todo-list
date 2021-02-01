@@ -38,7 +38,7 @@ function Todolist() {
               {groceries.map((item, index) => {
                 return (
                   <li key={index}>
-                    <Todo text={item} i={index} />
+                    <Todo text={item} i={index} list={groceryList} setGroceries={setGroceries} />
                   </li>
                 );
               })}
